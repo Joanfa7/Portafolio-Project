@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@web3uikit/core": "^0.2.0",
+    "@web3uikit/icons": "^0.1.12",
+    "@web3uikit/web3": "^0.2.0"
+  }
+}

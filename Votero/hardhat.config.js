@@ -17,7 +17,9 @@ module.exports = {
       accounts: [PRIVATE_KEY],
     },
     etherscan: {
-      url: API_KEY,
+      apiKey: {
+        poligonMumbai: API_KEY,
+      },
     },
   },
 };
