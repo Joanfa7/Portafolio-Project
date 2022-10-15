@@ -1,8 +1,11 @@
+import React, { useState } from "react";
 import logo from "./images/logo.png";
 import "./App.css";
 import { NeftifyConnectWallet } from "@neftify/connect-react";
+import { Coin } from "./components/Coin";
 
 function App() {
+  const [btc, setBtc] = useState(50);
   return (
     <>
       <div className="header">
@@ -14,6 +17,11 @@ function App() {
           <NeftifyConnectWallet />
         </div>
       </div>
+      <div className="instructions">
+        {" "}
+        <p>Aqui se escribte una instruccion </p>
+      </div>
+      <Coin perc={btc} setPerc={setBtc} token={"BTC"} />
     </>
   );
 }

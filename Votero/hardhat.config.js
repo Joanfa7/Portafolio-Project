@@ -11,13 +11,18 @@ const API_KEY = process.env.API_KEY;
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.7",
+  defaultNetwork: "hardhat",
   networks: {
     mumbai: {
       url: POLYGON_MUMBAI,
       accounts: [PRIVATE_KEY],
     },
+    localhost: {
+      url: "http://127.0.0.1:8545/",
+      chainID: 31337,
+    },
     etherscan: {
-      apiKey: {
+      url: {
         poligonMumbai: API_KEY,
       },
     },
