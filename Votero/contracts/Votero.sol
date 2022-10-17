@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.7;
+pragma solidity ^0.8.7;
 
-contract MarketSentiment {
+contract Votero {
     address public owner;
     string[] public tickersArray;
 
@@ -13,11 +13,10 @@ contract MarketSentiment {
     struct ticker {
         bool exists;
         uint256 up;
-        uint256 down;
         mapping(address => bool) Voters;
     }
 
-    event tickerupdated(uint256 up, uint256 down, address voter, string ticker);
+    event tickerupdated(uint256 up, address voter, string ticker);
 
     mapping(string => ticker) private Tickers;
 
@@ -40,20 +39,18 @@ contract MarketSentiment {
 
         if (_vote) {
             t.up++;
-        } else {
-            t.down++;
         }
 
-        emit tickerupdated(t.up, t.down, msg.sender, _ticker);
+        emit tickerupdated(t.up, msg.sender, _ticker);
     }
 
     function getVotes(string memory _ticker)
         public
         view
-        returns (uint256 up, uint256 down)
+        returns (uint256 up)
     {
         require(Tickers[_ticker].exists, "No such Ticker Defined");
         ticker storage t = Tickers[_ticker];
-        return (t.up, t.down);
+        return (t.up);
     }
 }
