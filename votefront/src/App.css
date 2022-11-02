@@ -1,0 +1,84 @@
+.list {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  row-gap: 50px;
+}
+
+.header {
+  height: 100px;
+  width: 90;
+  margin: auto;
+  max-width: 1200px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  align-items: center;
+}
+
+.instructions {
+  margin-top: 50px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  width: 600;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.sc-kTvvXX {
+  background-color: #202c37 !important;
+  width: 40vw import;
+  height: 450px;
+}
+
+:root {
+  --neftify-modal-radius: 21px;
+  --neftify-modal-background-color: #fff;
+  --neftify-modal-text-color: #010101;
+  --neftify-header-background-color: #262626;
+  --neftify-header-close-button-background-color: #0d0d0d;
+  --neftify-header-close-button-icon-color: #b6b6b6;
+  --neftify-provider-radius: 16px;
+}
+
+.main-app {
+  text-align: center;
+  margin: 100px;
+}
+
+.cta-button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  min-width: 250px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.connect-wallet-button {
+  background: rgb(32, 129, 226);
+}
+
+.mint-nft-button {
+  background: orange;
+}
