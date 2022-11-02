@@ -2,6 +2,8 @@
 
 Votero is a web3 application to make votes for candidates.
 
+[Contract in etherscan](https://goerli.etherscan.io/address/0xEaB5e8FCd263A873725c9a1955fb476ecDd7F86F)
+
 ![alt text](./votefront/src/images/Screenshot%20from%202022-11-02%2009-02-26.png)
 
 ### Authors
